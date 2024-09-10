@@ -21,7 +21,7 @@ body {
 /* Estilos para la imagen del gato */
 .gatitoAcostado-imagen {
     position: absolute; 
-    top: 135px; 
+    top: 120px; 
     left: 570px; 
     width: 100px; 
     height: auto; 
