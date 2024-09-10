@@ -1,1 +1,44 @@
-Hola Mundo
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <h2>Calculadora Básica</h2>
+        <input type="text" id="input1" placeholder="Número 1">
+        <input type="text" id="input2" placeholder="Número 2">
+        <select id="operation">
+            <option value="" disabled selected>Seleccionar operación</option>
+            <option value="add">Suma</option>
+            <option value="subtract">Resta</option>
+            <option value="multiply">Multiplicación</option>
+            <option value="divide">División</option>
+        </select>
+        <button id="calculate">Calcular</button>
+        <!-- Etiqueta y campo de resultado -->
+        <div class="result-container">
+            <label for="result">Resultado:</label>
+            <input type="text" id="result" readonly placeholder="">
+        </div>
+        <img src="Resourse/gatoAcostado.png" alt="GatoAcostado" class="gatitoAcostado-imagen">
+    </div>
+    <!-- Contenedor del mensaje de error -->
+    <div id="error-modal" class="error-modal hidden">
+        <div class="error-content">
+            <img src="Resourse/gatoEnojado.png" alt="GatitoEnojado" class="gatitoEnojado-imagen">
+            <h1 id="error-message">Mensaje de error</h1>
+            <button id="close-error">Cerrar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
